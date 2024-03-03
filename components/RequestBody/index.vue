@@ -24,7 +24,7 @@
     </div>
 
     <div v-if="serverResponse" class="mt-4 grid justify-items-center">
-      <textarea readonly class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none" rows="4" v-model="serverResponse"></textarea>
+      <textarea readonly class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none" rows="4" v-model="serverResponse">..</textarea>
       <button @click="copyToClipboard" class="mt-2 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring focus:border-green-300">
         Copy to Clipboard
       </button>
@@ -69,7 +69,7 @@ export default {
           console.log('File uploaded successfully:', response.data);
 
           // Store the server response
-          this.serverResponse = response.data.prediction;
+          this.serverResponse = response.data.predictions;
 
           // Clear the file input after upload
           this.file = null;
