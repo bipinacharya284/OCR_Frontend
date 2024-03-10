@@ -1,5 +1,5 @@
 <template>
-     <Navbar />  <!-- calling of navbar  -->
+     <Navbar />  
     <div>
 <h2>Devanagari Optical Character Recognition</h2>
 <RequestBody />

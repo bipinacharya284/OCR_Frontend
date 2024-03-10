@@ -1,5 +1,5 @@
 <template>
-    <!-- from-transparent -->
+    
     <nav class="bg-gray-800 z-20 sticky top-0">
         <div class="max-w-7xl px-4 sm:px-6 lg:px-8 transition-all ease-in-out delay-300">
             <div class="flex items-center justify-between h-1/2 py-6 transition-all ease-in-out delay-300">
@@ -12,7 +12,7 @@
                 </div>
             </div>
         </div>
-        <!-- You can add other components here -->
+        
     </nav>
 </template>
 <style>
