@@ -3,7 +3,6 @@
     <div class="flex flex-col">
       <span>
         Made with ❤️
-        <!-- <Icon name="material-symbols:favorite-rounded" color="crimson" /> -->
         © 2023 -{{ date }} All rights reserved.
       </span>
       

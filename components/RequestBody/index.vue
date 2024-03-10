@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     handleFileChange(event) {
-      // Update the 'file' property when a file is selected
+      // Updating the 'file' property when a file is selected
       this.file = event.target.files[0];
     },
     uploadFile() {
@@ -54,7 +54,7 @@ export default {
         return;
       }
 
-      // Prepare form data for POST request
+      // Preparing form data for POST request
       const formData = new FormData();
       formData.append('file', this.file);
 
@@ -65,17 +65,17 @@ export default {
           }
         })
         .then((response) => {
-          // Handle successful response
+          // Handling the successful response
           console.log('File uploaded successfully:', response.data);
 
-          // Store the server response
+          // Storing the server response
           this.serverResponse = response.data.predictions;
 
-          // Clear the file input after upload
+          // Clearing the file input after upload
           this.file = null;
         })
         .catch((error) => {
-          // Handle error
+          // Handldling error
           console.error('Error uploading file:', error);
         });
     },
@@ -91,5 +91,5 @@ export default {
 </script>
 
 <style scoped>
-/* Add your component-specific styles here */
+
 </style>
